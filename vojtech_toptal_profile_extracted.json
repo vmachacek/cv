@@ -1,0 +1,215 @@
+{
+  "basics": {
+    "name": "Vojtech Machacek",
+    "headline": "Full-stack Developer",
+    "location": "Miami, FL, United States",
+    "verifiedExpertise": "Engineering",
+    "summary": "Reliable software developer with over a decade of experience in full-stack development. Worked with large eCommerce stores, international startups, and Fortune 100 companies. Comfortable across software development and project management roles.",
+    "availability": "Part-time",
+    "preferredEnvironment": [
+      ".NET 5",
+      ".NET Core",
+      "Angular",
+      "Azure",
+      "Xamarin"
+    ],
+    "toptalMemberSince": "2021-01-27",
+    "imageUrl": "https://bs-uploads.toptal.io/blackfish-uploads/talent/720679/picture/optimized/huge_f49ba1cd79e5f4f74abd732b4b1a5df5-c3b5cec39107c83526d9035974972d32.jpeg",
+    "publicProfileUrl": "https://www.toptal.com/developers/resume/vojtech-machacek"
+  },
+  "highlights": {
+    "signatureAchievement": "Co-founded a business while traveling around the world.",
+    "portfolioHighlights": [
+      {
+        "title": "Fortune 100 North American Construction Equipment Manufacturer",
+        "summaryTech": "Angular, C#, ASP.NET Core, Python, HTML, CSS, JavaScript, ASP.NET..."
+      },
+      {
+        "title": "Orchestr8",
+        "summaryTech": "Amazon Web Services (AWS), Entity Framework, Angular, .NET Core, C#, APIs..."
+      },
+      {
+        "title": "Microsoft",
+        "summaryTech": "React, .NET Core, Azure Cosmos DB, Entity Framework, C#, APIs, ASP.NET, C#.NET..."
+      }
+    ],
+    "experienceByTechnology": [
+      "C# - 10 years",
+      "TypeScript - 5 years",
+      ".NET - 5 years",
+      "Test Automation - 5 years",
+      "Angular - 4 years",
+      ".NET Core - 4 years",
+      "Domain-driven Design (DDD) - 3 years",
+      "Azure - 2 years"
+    ]
+  },
+  "skills": {
+    "Libraries/APIs": [
+      "Entity Framework",
+      "React"
+    ],
+    "Tools": [
+      "Azure App Service"
+    ],
+    "Languages": [
+      "C#",
+      "C#.NET",
+      "TypeScript",
+      "Python",
+      "HTML",
+      "CSS",
+      "JavaScript"
+    ],
+    "Frameworks": [
+      ".NET Core",
+      "Angular",
+      ".NET",
+      "ASP.NET",
+      "Bootstrap",
+      "ASP.NET Core"
+    ],
+    "Paradigms": [
+      "Test Automation",
+      "Event Sourcing",
+      "Test-driven Development (TDD)"
+    ],
+    "Platforms": [
+      "Azure",
+      "Xamarin",
+      "Amazon Web Services (AWS)",
+      "Windows"
+    ],
+    "Storage": [
+      "Redis",
+      "PostgreSQL",
+      "Microsoft SQL Server",
+      "Azure Cosmos DB",
+      "MongoDB",
+      "Azure Blobs",
+      "NoSQL"
+    ],
+    "Other": [
+      "APIs",
+      "Pulumi",
+      "Domain-driven Design (DDD)",
+      "Microsoft Azure Cloud Server",
+      "Azure Portals"
+    ]
+  },
+  "featuredExpertise": [
+    "C#",
+    ".NET",
+    "Angular",
+    "TypeScript",
+    "Test Automation",
+    "Bootstrap",
+    "Redis",
+    "Xamarin",
+    "PostgreSQL",
+    "Agile Development",
+    "AWS",
+    "React.js",
+    "Python",
+    "CSS"
+  ],
+  "workExperience": [
+    {
+      "role": "Senior Full-stack Developer",
+      "period": "2021 - PRESENT",
+      "company": "Fortune 100 North American Construction Equipment Manufacturer",
+      "bullets": [
+        "Developed line of business application, responsible for implementing new features and maintaining the overall architecture.",
+        "Collaborated with project managers and stakeholders to understand business requirements and deliver solutions that met their needs.",
+        "Conducted thorough testing to ensure the high-quality and reliable performance of the application.",
+        "Mentored junior developers and provided guidance on best practices and coding standards."
+      ]
+    },
+    {
+      "role": "Senior Full-stack Developer",
+      "period": "2020 - 2021",
+      "company": "Orchestr8",
+      "bullets": [
+        "Reworked the legacy system using the strangler pattern. Communicated closely with business experts to understand the domain.",
+        "Designed a new domain model for the next version of the Postgres database. Reflected on the insight drawn from domain experts.",
+        "Implemented a testing framework for a project, leveraging Docker to mimic the production environment.",
+        "Set and enforced the code policies and standards, ensuring we adhered to industry standards and best practices.",
+        "Created a sample database benchmark project for the client's specific datasets, comparing mature DB engines on the market."
+      ]
+    },
+    {
+      "role": "Senior Full-stack Developer",
+      "period": "2019 - 2020",
+      "company": "Microsoft",
+      "bullets": [
+        "Developed the web and front-end part of the application, a social network in the education industry.",
+        "Worked on the client-side using Ant Design framework and React. Made sure we were following accessibility principles.",
+        "Integrated AI that flags any sensitive content uploaded by malicious uses.",
+        "Managed infrastructure in Microsoft Azure using Cosmos DB."
+      ]
+    },
+    {
+      "role": "Senior Full-stack Developer",
+      "period": "2018 - 2020",
+      "company": "Lykke",
+      "bullets": [
+        "Developed a microservice to manage the user's personal data, KYC process, and user preferences. Used event sourcing as a data store.",
+        "Defined infrastructure as a code with TypeScript and Pulumi.",
+        "Developed operations dashboards to support developers maintaining our systems."
+      ]
+    },
+    {
+      "role": "Software Developer",
+      "period": "2013 - 2018",
+      "company": "Blocshop",
+      "bullets": [
+        "Refactored a legacy checkout system for a client in the eCommerce industry, resulting in a severalfold response time improvement.",
+        "Built a client-facing app for managing orders and personal information.",
+        "Prepared and ran a series of load tests. Reported results to the management. Revised and implemented improvements to the infrastructure.",
+        "Developed a geocaching game with object detection features."
+      ]
+    },
+    {
+      "role": "Application Developer",
+      "period": "2011 - 2013",
+      "company": "Landis+Gyr s.r.o",
+      "bullets": [
+        "Developed a Silverlight application for the smart city concept.",
+        "Integrated with WCF services within the client's infrastructure.",
+        "Developed a UI toolkit reflecting the company's design language in XAML."
+      ]
+    },
+    {
+      "role": "Web Developer",
+      "period": "2008 - 2011",
+      "company": "SlickTouch",
+      "bullets": [
+        "Maintained and developed a homegrown CMS framework used on other software projects.",
+        "Developed a bespoke eCommerce solution for a client.",
+        "Built a scheduling platform for a client in the education industry.",
+        "Developed a number of websites with varying levels of complexity and requirements."
+      ]
+    }
+  ],
+  "projects": [
+    {
+      "name": "DuckFerries",
+      "description": "Bootstrapped a little company from the ground up. DuckFerries aggregates regional ferry ticket providers and operates as an affiliate channel for ferry boat operators.",
+      "keyResponsibilities": [
+        "Set up infrastructure that enabled company growth.",
+        "Programmed and maintained a customer-facing checkout system.",
+        "Programmed and maintained the back-office system.",
+        "Hired key team members.",
+        "Ran A/B testing and implemented UX changes.",
+        "Automated tests and deployments."
+      ]
+    }
+  ],
+  "meta": {
+    "source": "Extracted from uploaded Toptal profile HTML",
+    "notes": [
+      "This JSON is normalized for rendering in an Angular printable CV.",
+      "Some fields, such as direct contact info, education, certifications, and detailed project dates, were not present in the uploaded profile."
+    ]
+  }
+}
