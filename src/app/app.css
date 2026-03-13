@@ -245,34 +245,6 @@
   color: var(--cv-header-sep);
 }
 
-.cv-header-links {
-  display: flex;
-  align-items: center;
-  gap: 1.25rem;
-}
-
-.cv-toptal-link {
-  font-size: 0.8125rem;
-  color: var(--cv-header-link);
-  text-decoration: none;
-  font-weight: 500;
-}
-
-.cv-toptal-link:hover {
-  color: var(--cv-header-link-hover);
-  text-decoration: underline;
-}
-
-.cv-toptal-link:focus-visible {
-  outline: 2px solid #93c5fd;
-  outline-offset: 2px;
-  border-radius: 2px;
-}
-
-.cv-since {
-  font-size: 0.75rem;
-  color: var(--cv-header-since);
-}
 
 /* ── Body grid ────────────────────────────────────── */
 
@@ -543,6 +515,54 @@
   margin: 0;
 }
 
+.cert-entry {
+  page-break-inside: avoid;
+  break-inside: avoid;
+  margin-bottom: 0.75rem;
+}
+
+.cert-entry:last-child {
+  margin-bottom: 0;
+}
+
+.cert-header {
+  display: flex;
+  align-items: baseline;
+  gap: 1rem;
+  margin-bottom: 0.15rem;
+}
+
+.cert-name {
+  font-size: 0.9375rem;
+  font-weight: 700;
+  color: var(--heading-color);
+  margin: 0;
+}
+
+.cert-link {
+  font-size: 0.8125rem;
+  color: var(--cv-header-link);
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.cert-link:hover {
+  color: var(--cv-header-link-hover);
+  text-decoration: underline;
+}
+
+.cert-link:focus-visible {
+  outline: 2px solid #93c5fd;
+  outline-offset: 2px;
+  border-radius: 2px;
+}
+
+.cert-meta {
+  font-size: 0.8125rem;
+  color: var(--company-color);
+  margin: 0;
+}
+
 .project-responsibilities {
   font-size: 0.8125rem;
   color: var(--bullet-color);
@@ -627,6 +647,20 @@
     width: 100%;
     box-shadow: none;
     border-radius: 0;
+  }
+
+  /* Float layout: sidebar on pg1 only, main full-width on pg2+ */
+  .cv-body {
+    display: block;
+  }
+
+  .cv-sidebar {
+    float: left;
+    width: 255px;
+  }
+
+  .cv-main {
+    overflow: hidden; /* BFC: hugs float on pg1, full-width once float ends */
   }
 
 }

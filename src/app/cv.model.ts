@@ -6,9 +6,14 @@ export interface CvBasics {
   summary: string;
   availability: string;
   preferredEnvironment: string[];
-  toptalMemberSince: string;
   imageUrl: string;
-  publicProfileUrl: string;
+}
+
+export interface Certification {
+  name: string;
+  issuer: string;
+  since: string;
+  url?: string;
 }
 
 export interface Highlights {
@@ -44,4 +49,5 @@ export interface CvData {
   workExperience: WorkExperience[];
   projects: Project[];
   education: Education[];
+  certifications: Certification[];
 }

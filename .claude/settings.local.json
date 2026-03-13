@@ -1,7 +1,9 @@
 {
   "permissions": {
     "allow": [
-      "Bash(npx ng:*)"
+      "Bash(npx ng:*)",
+      "Bash(git remote:*)",
+      "Bash(git add:*)"
     ]
   }
 }

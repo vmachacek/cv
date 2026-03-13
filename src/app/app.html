@@ -92,17 +92,6 @@
         <div class="cv-header-meta">
           <span>{{ cv.basics.location }}</span>
         </div>
-        <div class="cv-header-links">
-          <a
-            [href]="cv.basics.publicProfileUrl"
-            target="_blank"
-            rel="noopener noreferrer"
-            class="cv-toptal-link"
-          >
-            Toptal Profile
-          </a>
-          <span class="cv-since">Member since {{ memberSince }}</span>
-        </div>
       </div>
     </header>
 
@@ -201,6 +190,21 @@
                 <span class="education-field">{{ edu.field }}</span>
               </div>
               <p class="education-note">{{ edu.note }}</p>
+            </div>
+          }
+        </section>
+
+        <section class="main-section" aria-labelledby="certifications-heading">
+          <h2 id="certifications-heading" class="section-heading">Certifications &amp; Memberships</h2>
+          @for (cert of cv.certifications; track cert.name) {
+            <div class="cert-entry">
+              <div class="cert-header">
+                <h3 class="cert-name">{{ cert.name }}</h3>
+                @if (cert.url) {
+                  <a [href]="cert.url" target="_blank" rel="noopener noreferrer" class="cert-link">View Profile</a>
+                }
+              </div>
+              <p class="cert-meta">{{ cert.issuer }} &middot; Since {{ cert.since }}</p>
             </div>
           }
         </section>

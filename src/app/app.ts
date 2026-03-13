@@ -20,12 +20,6 @@ export class App {
     items,
   }));
 
-  protected readonly memberSince = (() => {
-    const [year, month] = CV_DATA.basics.toptalMemberSince.split('-');
-    const date = new Date(Number(year), Number(month) - 1);
-    return date.toLocaleDateString('en-US', { month: 'long', year: 'numeric' });
-  })();
-
   protected expTech(entry: string): string {
     return entry.split(' - ')[0];
   }

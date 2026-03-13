@@ -10,10 +10,8 @@ export const CV_DATA: CvData = {
       'Full-stack software developer with 10+ years of experience building production systems for startups, large eCommerce platforms, and Fortune 100 companies. Experienced in designing, implementing, and improving software systems while working closely with technical and business stakeholders.',
     availability: 'Part-time',
     preferredEnvironment: ['.NET', 'Angular', 'Azure/AWS'],
-    toptalMemberSince: '2021-01-27',
     imageUrl:
       'https://bs-uploads.toptal.io/blackfish-uploads/talent/720679/picture/optimized/huge_f49ba1cd79e5f4f74abd732b4b1a5df5-c3b5cec39107c83526d9035974972d32.jpeg',
-    publicProfileUrl: 'https://www.toptal.com/developers/resume/vojtech-machacek',
   },
   highlights: {
     signatureAchievement: 'Founded and ran a profitable online e-commerce business while traveling internationally.',
@@ -32,8 +30,7 @@ export const CV_DATA: CvData = {
       },
     ],
     experienceByTechnology: [
-      'C# / .NET - 10 years',
-      'SQL - 9 years',
+      'C# / .NET / SQL - 10 years',      
       'Angular & TypeScript - 7 years',
       'Domain-driven Design - 6 years',
       'Test Automation - 5 years',
@@ -158,6 +155,14 @@ export const CV_DATA: CvData = {
         'Ran A/B experiments and implemented UX improvements to increase conversions.',
         'Introduced automated testing and deployment processes.',
       ],
+    },
+  ],
+  certifications: [
+    {
+      name: 'Verified Expert',
+      issuer: 'Toptal',
+      since: 'January 2021',
+      url: 'https://www.toptal.com/developers/resume/vojtech-machacek',
     },
   ],
   education: [
