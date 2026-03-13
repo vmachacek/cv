@@ -8,34 +8,75 @@
       [attr.aria-pressed]="isDark()"
     >
       @if (isDark()) {
-        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-          <circle cx="12" cy="12" r="5"/>
-          <line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/>
-          <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/>
-          <line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/>
-          <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="16"
+          height="16"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2.5"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          aria-hidden="true"
+        >
+          <circle cx="12" cy="12" r="5" />
+          <line x1="12" y1="1" x2="12" y2="3" />
+          <line x1="12" y1="21" x2="12" y2="23" />
+          <line x1="4.22" y1="4.22" x2="5.64" y2="5.64" />
+          <line x1="18.36" y1="18.36" x2="19.78" y2="19.78" />
+          <line x1="1" y1="12" x2="3" y2="12" />
+          <line x1="21" y1="12" x2="23" y2="12" />
+          <line x1="4.22" y1="19.78" x2="5.64" y2="18.36" />
+          <line x1="18.36" y1="5.64" x2="19.78" y2="4.22" />
         </svg>
         Light
       } @else {
-        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-          <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="16"
+          height="16"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2.5"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          aria-hidden="true"
+        >
+          <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z" />
         </svg>
         Dark
       }
     </button>
 
     <button class="print-btn" type="button" (click)="print()" aria-label="Print or save as PDF">
-      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-        <polyline points="6 9 6 2 18 2 18 9"/>
-        <path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"/>
-        <rect x="6" y="14" width="12" height="8"/>
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="16"
+        height="16"
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        stroke-width="2.5"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        aria-hidden="true"
+      >
+        <polyline points="6 9 6 2 18 2 18 9" />
+        <path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2" />
+        <rect x="6" y="14" width="12" height="8" />
       </svg>
       Print / Save as PDF
     </button>
   </div>
 
-  <article class="cv-page" aria-label="Curriculum Vitae of {{ cv.basics.name }}">
+  <header class="print-page-header" aria-hidden="true">
+    <span>Vojtech Machacek</span>
+    <span>Principal Software Engineer</span>
+  </header>
 
+  <article class="cv-page" aria-label="Curriculum Vitae of {{ cv.basics.name }}">
     <!-- Header -->
     <header class="cv-header">
       <img
@@ -50,8 +91,6 @@
         <p class="cv-headline">{{ cv.basics.headline }}</p>
         <div class="cv-header-meta">
           <span>{{ cv.basics.location }}</span>
-          <span class="meta-sep" aria-hidden="true">·</span>
-          <span>Toptal Verified {{ cv.basics.verifiedExpertise }}</span>
         </div>
         <div class="cv-header-links">
           <a
@@ -69,10 +108,8 @@
 
     <!-- Body -->
     <div class="cv-body">
-
       <!-- Sidebar -->
       <aside class="cv-sidebar" aria-label="Skills and expertise">
-
         <section class="sidebar-section" aria-labelledby="exp-heading">
           <h2 id="exp-heading" class="sidebar-heading">Experience</h2>
           <ul class="exp-list">
@@ -103,17 +140,18 @@
             }
           </div>
         </section>
-
       </aside>
 
       <!-- Main content -->
       <main class="cv-main">
-
         <section class="main-section" aria-labelledby="summary-heading">
           <h2 id="summary-heading" class="section-heading">Summary</h2>
           <p class="summary-text">{{ cv.basics.summary }}</p>
           @if (cv.highlights.signatureAchievement) {
-            <blockquote class="signature-achievement">{{ cv.highlights.signatureAchievement }}</blockquote>
+            <blockquote class="signature-achievement">
+              <span class="signature-label">Highlight</span>
+              {{ cv.highlights.signatureAchievement }}
+            </blockquote>
           }
         </section>
 
@@ -154,7 +192,20 @@
           }
         </section>
 
+        <section class="main-section" aria-labelledby="education-heading">
+          <h2 id="education-heading" class="section-heading">Education</h2>
+          @for (edu of cv.education; track edu.institution) {
+            <div class="education-entry">
+              <div class="education-header">
+                <h3 class="education-institution">{{ edu.institution }}</h3>
+                <span class="education-field">{{ edu.field }}</span>
+              </div>
+              <p class="education-note">{{ edu.note }}</p>
+            </div>
+          }
+        </section>
       </main>
     </div>
   </article>
+
 </div>

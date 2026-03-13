@@ -12,7 +12,7 @@ import { CV_DATA } from './cv-data';
   },
 })
 export class App {
-  protected readonly isDark = signal(window.matchMedia('(prefers-color-scheme: dark)').matches);
+  protected readonly isDark = signal(App.loadTheme());
   protected readonly cv = CV_DATA;
 
   protected readonly skillCategories = Object.entries(CV_DATA.skills).map(([name, items]) => ({
@@ -35,7 +35,18 @@ export class App {
   }
 
   protected toggleTheme(): void {
-    this.isDark.update(v => !v);
+    this.isDark.update(v => {
+      const next = !v;
+      localStorage.setItem('theme', next ? 'dark' : 'light');
+      return next;
+    });
+  }
+
+  private static loadTheme(): boolean {
+    const saved = localStorage.getItem('theme');
+    if (saved === 'dark') return true;
+    if (saved === 'light') return false;
+    return window.matchMedia('(prefers-color-scheme: dark)').matches;
   }
 
   protected print(): void {

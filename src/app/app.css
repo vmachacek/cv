@@ -410,6 +410,17 @@
   margin: 0 0 0.75rem;
 }
 
+.signature-label {
+  display: block;
+  font-size: 0.625rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--section-heading-color);
+  margin-bottom: 0.25rem;
+  font-style: normal;
+}
+
 .signature-achievement {
   font-size: 0.8125rem;
   color: var(--signature-color);
@@ -495,6 +506,43 @@
   margin: 0 0 0.5rem;
 }
 
+.education-entry {
+  margin-bottom: 1rem;
+  page-break-inside: avoid;
+  break-inside: avoid;
+}
+
+.education-entry:last-child {
+  margin-bottom: 0;
+}
+
+.education-header {
+  display: flex;
+  align-items: baseline;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+  margin-bottom: 0.2rem;
+}
+
+.education-institution {
+  font-size: 0.9375rem;
+  font-weight: 700;
+  color: var(--heading-color);
+  margin: 0;
+}
+
+.education-field {
+  font-size: 0.8125rem;
+  color: var(--company-color);
+  font-weight: 500;
+}
+
+.education-note {
+  font-size: 0.8125rem;
+  color: var(--main-text);
+  margin: 0;
+}
+
 .project-responsibilities {
   font-size: 0.8125rem;
   color: var(--bullet-color);
@@ -506,34 +554,56 @@
   gap: 0.2rem;
 }
 
+/* ── Print header/footer (hidden on screen) ──────── */
+
+.print-page-header {
+  display: none;
+}
+
 /* ── Print ────────────────────────────────────────── */
 
 @media print {
+  @page {
+    margin: 8mm 12mm 14mm;
+  }
+
+  .print-page-header {
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    top: 0; left: 0; right: 0;
+    padding: 0 12mm 2mm;
+    border-bottom: 0.5pt solid #e2e8f0;
+    font-size: 7.5pt;
+    color: #94a3b8;
+    background: white;
+  }
+
   :host,
   :host(.theme-dark) {
     --wrapper-bg: #ffffff;
     --cv-shadow: none;
 
-    --cv-header-bg: #0f172a;
-    --cv-header-h1: #ffffff;
-    --cv-header-headline: #94a3b8;
-    --cv-header-meta: #cbd5e1;
-    --cv-header-sep: #334155;
-    --cv-header-link: #60a5fa;
-    --cv-header-since: #475569;
-    --cv-photo-border: rgba(255, 255, 255, 0.2);
+    --cv-header-bg: #f1f5f9;
+    --cv-header-h1: #0f172a;
+    --cv-header-headline: #64748b;
+    --cv-header-meta: #475569;
+    --cv-header-sep: #cbd5e1;
+    --cv-header-link: #3b82f6;
+    --cv-header-since: #94a3b8;
+    --cv-photo-border: rgba(0, 0, 0, 0.1);
 
-    --sidebar-bg: #1e293b;
-    --sidebar-text: #cbd5e1;
-    --sidebar-heading: #38bdf8;
-    --sidebar-heading-border: rgba(255, 255, 255, 0.07);
-    --sidebar-exp-tech: #e2e8f0;
-    --sidebar-exp-years: #64748b;
-    --sidebar-skill-cat: #94a3b8;
-    --sidebar-skill-items: #cbd5e1;
-    --tag-bg: rgba(56, 189, 248, 0.1);
-    --tag-color: #38bdf8;
-    --tag-border: rgba(56, 189, 248, 0.22);
+    --sidebar-bg: #e8edf2;
+    --sidebar-text: #475569;
+    --sidebar-heading: #3b82f6;
+    --sidebar-heading-border: rgba(0, 0, 0, 0.07);
+    --sidebar-exp-tech: #1e293b;
+    --sidebar-exp-years: #94a3b8;
+    --sidebar-skill-cat: #64748b;
+    --sidebar-skill-items: #334155;
+    --tag-bg: rgba(59, 130, 246, 0.08);
+    --tag-color: #3b82f6;
+    --tag-border: rgba(59, 130, 246, 0.2);
 
     --main-bg: #ffffff;
     --main-text: #475569;
@@ -559,14 +629,4 @@
     border-radius: 0;
   }
 
-  .cv-header,
-  .cv-sidebar {
-    -webkit-print-color-adjust: exact;
-    print-color-adjust: exact;
-  }
-
-  .tag {
-    -webkit-print-color-adjust: exact;
-    print-color-adjust: exact;
-  }
 }

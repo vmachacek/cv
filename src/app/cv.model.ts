@@ -30,6 +30,12 @@ export interface Project {
   keyResponsibilities: string[];
 }
 
+export interface Education {
+  institution: string;
+  field: string;
+  note: string;
+}
+
 export interface CvData {
   basics: CvBasics;
   highlights: Highlights;
@@ -37,4 +43,5 @@ export interface CvData {
   featuredExpertise: string[];
   workExperience: WorkExperience[];
   projects: Project[];
+  education: Education[];
 }
