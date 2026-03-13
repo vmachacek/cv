@@ -6,7 +6,11 @@
       "Bash(git add:*)",
       "Bash(git branch:*)",
       "Bash(mkdir -p C:/dev/Folio/cv-folio/app && git mv angular.json package.json package-lock.json tsconfig.json tsconfig.app.json tsconfig.spec.json src public app/)",
-      "Bash(git mv:*)"
+      "Bash(git mv:*)",
+      "Bash(git rm:*)",
+      "Bash(gh repo:*)",
+      "Bash(gh api:*)",
+      "Bash(git commit:*)"
     ]
   }
 }
