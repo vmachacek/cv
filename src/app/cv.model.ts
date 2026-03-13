@@ -4,8 +4,7 @@ export interface CvBasics {
   location: string;
   verifiedExpertise: string;
   summary: string;
-  availability: string;
-  preferredEnvironment: string[];
+preferredEnvironment: string[];
   imageUrl: string;
 }
 

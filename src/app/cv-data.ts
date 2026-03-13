@@ -8,8 +8,7 @@ export const CV_DATA: CvData = {
     verifiedExpertise: 'Engineering',
     summary:
       'Full-stack software developer with 10+ years of experience building production systems for startups, large eCommerce platforms, and Fortune 100 companies. Experienced in designing, implementing, and improving software systems while working closely with technical and business stakeholders.',
-    availability: 'Part-time',
-    preferredEnvironment: ['.NET', 'Angular', 'Azure/AWS'],
+preferredEnvironment: ['.NET', 'Angular', 'Azure/AWS'],
     imageUrl:
       'https://bs-uploads.toptal.io/blackfish-uploads/talent/720679/picture/optimized/huge_f49ba1cd79e5f4f74abd732b4b1a5df5-c3b5cec39107c83526d9035974972d32.jpeg',
   },

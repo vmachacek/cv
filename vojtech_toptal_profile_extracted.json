@@ -5,8 +5,7 @@
     "location": "Miami, FL, United States",
     "verifiedExpertise": "Engineering",
     "summary": "Reliable software developer with over a decade of experience in full-stack development. Worked with large eCommerce stores, international startups, and Fortune 100 companies. Comfortable across software development and project management roles.",
-    "availability": "Part-time",
-    "preferredEnvironment": [
+"preferredEnvironment": [
       ".NET 5",
       ".NET Core",
       "Angular",

@@ -1,7 +1,6 @@
 # Vojtech Machacek — Principal Software Engineer
 
 **Location:** Menasha, WI, United States
-**Availability:** Part-time
 **Preferred Stack:** .NET · Angular · Azure/AWS
 
 Full-stack software developer with 10+ years of experience building production systems for startups, large eCommerce platforms, and Fortune 100 companies. Experienced in designing, implementing, and improving software systems while working closely with technical and business stakeholders.
