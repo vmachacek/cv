@@ -7,7 +7,7 @@ export const CV_DATA: CvData = {
     location: 'Menasha, WI, United States',
     verifiedExpertise: 'Engineering',
     summary:
-      'Full-stack software developer with 10+ years of experience building production systems for startups, large eCommerce platforms, and Fortune 100 companies. Experienced in designing, implementing, and improving software systems while working closely with technical and business stakeholders.',
+      'Full-stack software developer with 18 years of experience building production systems for startups, large eCommerce platforms, and Fortune 100 companies. Experienced in designing, implementing, and improving software systems while working closely with technical and business stakeholders.',
     preferredEnvironment: ['.NET', 'Angular', 'Azure/AWS'],
     imageUrl:
       'https://bs-uploads.toptal.io/blackfish-uploads/talent/720679/picture/optimized/huge_f49ba1cd79e5f4f74abd732b4b1a5df5-c3b5cec39107c83526d9035974972d32.jpeg',
@@ -29,11 +29,12 @@ export const CV_DATA: CvData = {
       },
     ],
     experienceByTechnology: [
-      'C# / .NET / SQL - 13 years',
-      'Angular & TypeScript - 7 years',
-      'Domain-driven Design - 6 years',
-      'Test Automation - 5 years',
-      'Azure & AWS - 4 years',
+      'C# / .NET - 18 years',
+      'Angular & TypeScript - 13 years',
+      'Domain-driven Design - 10 years',
+      'Test Automation - 8 years',
+      'Azure & AWS - 7 years',
+      'SQL - 6 years',
     ],
   },
   skills: {
