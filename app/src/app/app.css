@@ -574,6 +574,52 @@
   gap: 0.2rem;
 }
 
+/* ── Mobile ───────────────────────────────────────── */
+
+@media (max-width: 700px) {
+  .cv-wrapper {
+    padding: 0.75rem 0 2rem;
+  }
+
+  .cv-page {
+    border-radius: 0;
+    box-shadow: none;
+  }
+
+  .cv-header {
+    padding: 1.25rem 1rem;
+    gap: 1rem;
+  }
+
+  .cv-photo {
+    width: 72px;
+    height: 72px;
+  }
+
+  .cv-header-content h1 {
+    font-size: 1.375rem;
+  }
+
+  .cv-body {
+    grid-template-columns: 1fr;
+  }
+
+  .cv-main {
+    padding: 1.25rem 1rem;
+  }
+
+  .toolbar {
+    top: 0.625rem;
+    right: 0.625rem;
+  }
+
+  .theme-toggle,
+  .print-btn {
+    padding: 0.45rem 0.75rem;
+    font-size: 0.75rem;
+  }
+}
+
 /* ── Print header/footer (hidden on screen) ──────── */
 
 .print-page-header {
